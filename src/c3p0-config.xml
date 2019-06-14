@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+
+<!-- 默认的配置 -->
+	<default-config>
+	<property name="acquireIncrement">5</property>
+	<property name="initialPoolSize">10</property>
+	<property name="minPoolSize">5</property>
+	<property name="maxPoolSize">20</property>
+	
+	
+	<property name="jdbcUrl">jdbc:mysql://cdb-r5e5s9fs.bj.tencentcdb.com:10050/ttms</property>
+	<property name="user">root</property>
+	<property name="password">aliOS1688</property>
+	<property name="driverClass">com.mysql.jdbc.Driver</property>
+</default-config>
+</c3p0-config>

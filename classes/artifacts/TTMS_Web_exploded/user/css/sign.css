@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: url("../image/body2.jpg") no-repeat  100% 100%;
+    background-size: cover;
+}
+
+/*导航部分*/
+#container-head{
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0  3px 8px #a6a2a2;
+}
+#nav{
+    width: 90%;
+    height: 70px;
+    margin: 0px auto 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #6b6b6b;
+}
+
+#nav div:nth-child(2){
+    display: inline-block;
+    width: 200px;
+    font-size: 22px;
+    padding: 10px;
+    color: #ff875c;
+}
+#nav div:nth-child(4){
+    position: absolute;
+    right: 2%;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+}
+#nav div:nth-child(5){
+    position: absolute;
+    right: 15%;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+}
+#nav ul{
+    display: inline-block;
+    list-style: none;
+    width: 50%;
+}
+#nav ul li{
+    display: block;
+    width: 80px;
+    text-align: center;
+    padding-bottom: 10px;
+    float: left;
+    margin-right: 10%;
+    font-size: 19px;
+}
+#nav ul li:nth-child(1) a{
+    border-bottom:2px solid #ababab;
+    padding-bottom: 10px;
+    color: #ff875c;
+}
+
+#nav ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#nav ul li a{
+    text-decoration: none;
+    color:#6b6b6b ;
+}
+#nav a:hover{
+    color:#ff875c;
+    cursor: pointer;
+}
+#nav .icons{
+    padding-right: 4px;
+    font-size: 23px;
+}
+
+#container{
+    width: 725px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 2px 2px rgba(153,145,145,0.5);
+    box-sizing: border-box;
+    background: url("../image/body2.jpg") no-repeat  100% 100%;
+    background-size: cover;
+}
+#container-left{
+    display: inline-block;
+    width: 61%;
+    height: 100%;
+    color: #8b8b8b;
+    box-sizing: border-box;
+}
+#container-left span:nth-child(1){
+    position: absolute;
+    display: block;
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    padding: 40px;
+}
+#container-left span:nth-child(2){
+    position: absolute;
+    display: block;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    top:28%;
+    left: 6%;
+}
+#container-right{
+    display: inline-block;
+    width: 38%;
+    right: 0;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+}
+#container-right form{
+    position: absolute;
+    top:18%;
+    margin-left: 12px;
+}
+.form-title{
+    font-size: 20px;
+    display: block;
+    margin-bottom: 50px;
+}
+#form-login{
+    font-size: 16px;
+}
+.icon{
+    position: absolute;
+    font-size: 30px;
+    padding: 5px;
+    color: #333333;
+}
+#container-right form{
+    border-left: 1px solid;
+    padding-left: 30px;
+}
+#container-right form input{
+    display: block;
+    padding: 10px;
+    width: 72%;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+
+}
+#container-right form .form-sub{
+    display: inline-block;
+    width: 40%;
+    background-color: #13a095;
+    border: none;
+    margin: 35px 5px;
+    color: aliceblue;
+}
+
+#container-right form input[name="username"],#container-right form input[name="password"]{
+    padding-left: 38px;
+}

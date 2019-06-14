@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/*导航部分*/
+#container-head{
+    width: 100%;
+    position: relative;
+    box-shadow: 0  3px 8px #a6a2a2;
+}
+#nav{
+    width: 90%;
+    height: 70px;
+    margin: 0 auto 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #6b6b6b;
+}
+
+#nav div:nth-child(2){
+    display: inline-block;
+    width: 200px;
+    font-size: 22px;
+    padding: 10px;
+    color: #ff875c;
+}
+#nav div:nth-child(4){
+    position: absolute;
+    right: 2%;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+}
+#nav div:nth-child(5){
+    position: absolute;
+    right: 15%;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+}
+#nav ul{
+    display: inline-block;
+    list-style: none;
+    width: 50%;
+}
+#nav ul li{
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding-bottom: 10px;
+    float: left;
+    margin-right: 10%;
+    font-size: 19px;
+}
+#nav ul li:nth-child(1) a{
+    border-bottom:2px solid #ababab;
+    padding-bottom: 10px;
+    color:#ff875c;
+}
+
+#nav ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#nav ul li a{
+    text-decoration: none;
+    color:#6b6b6b ;
+}
+#nav a:hover{
+    color: #ff875c;
+    cursor: pointer;
+}
+#nav .icons{
+    padding-right: 4px;
+    font-size: 23px;
+}
+
+/*主体*/
+#container{
+    width: 85%;
+    margin: 10px auto;
+    border-bottom: 1px solid #b0b0b0;
+    border-radius: 5px;
+}
+.oder-con{
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+    /*border: 1px solid #d4d2d0;*/
+    border-radius: 5px;
+}
+.oder-con span,.oder-con div{
+    display: block;
+    margin: 15px;
+    font-size: 16px;
+    color: #444444;
+}
+
+#return_ticket {
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background:  #e97405;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+#return_ticket:hover{
+    background:#e94444;
+}
+
+.oder-con >.con{
+    width: 90%;
+    border: 1px solid #d4d2d0;
+    margin: 20px auto;
+    border-radius: 5px;
+}

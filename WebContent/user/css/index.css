@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/*导航部分*/
+#container-head{
+    width: 100%;
+    position: relative;
+    box-shadow: 0  3px 8px #a6a2a2;
+}
+#nav{
+    width: 90%;
+    height: 70px;
+    margin: 0px auto 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #6b6b6b;
+}
+
+#nav div:nth-child(2){
+    display: inline-block;
+    width: 200px;
+    font-size: 22px;
+    padding: 10px;
+    color: #ff875c;
+}
+#nav div:nth-child(4){
+    position: absolute;
+    right: 2%;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+}
+#nav div:nth-child(5){
+    position: absolute;
+    right: 15%;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+}
+#nav ul{
+    display: inline-block;
+    list-style: none;
+    width: 50%;
+}
+#nav ul li{
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding-bottom: 10px;
+    float: left;
+    margin-right: 10%;
+    font-size: 19px;
+}
+#nav ul li:nth-child(1) a{
+    border-bottom:2px solid #ababab;
+    padding-bottom: 10px;
+    color:#ff875c;
+}
+
+#nav ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#nav ul li a{
+    text-decoration: none;
+    color:#6b6b6b ;
+}
+#nav a:hover{
+    color: #ff875c;
+    cursor: pointer;
+}
+#nav .icons{
+    padding-right: 4px;
+    font-size: 23px;
+}
+/*主体*/
+#container{
+    width:100%;
+    margin: 0 auto;
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 3px auto;
+    transition: opacity 0.8s ease-in;
+    opacity: 0.8;
+}
+#container .iconfont{
+    z-index: 1;
+    font-size: 55px;
+    font-weight: bold;
+    color: #fffdef;
+}
+#left{
+    position: absolute;
+    left: 2%;
+    z-index: 1;
+    cursor: pointer;
+    padding: 10px 2px;
+    border-radius: 8%;
+}
+#right{
+    position: absolute;
+    z-index: 1;
+    right: 2%; /*绝对定位则left，top有效*/
+    cursor: pointer;
+    padding: 10px 2px;
+    border-radius: 8%;
+}
+#count{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#count span{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #f8f8ff;
+}
+
+/*电影介绍*/
+.container-movie{
+    width: 87%;
+    margin: 3% auto 1%;
+}
+.title{
+    width: 100%;
+    box-shadow: 0 3px 8px -5px #666464;
+}
+.title span{
+    display: block;
+    font-size: 20px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    color: #ff875c;
+}
+
+.poster-warp {
+    list-style: none;
+    width: 180px;
+    height: 275px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 20px 20px 10px 10px;
+    box-shadow: 1px 1px 10px 2px #e3e0e0;
+}
+.poster-warp a{
+    text-decoration: none;
+    color: #353535;
+}
+.poster-warp .movieImg {
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    height: 225px;
+}
+.poster-warp .movieInfo {
+    position: absolute;
+    visibility: hidden;
+    width: 160px;
+    height: 215px;
+    z-index: 11;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: .8rem;
+    color: #f5f5f5;
+    text-align: start;
+    background-color: rgba(0,0,0,.57);
+    pointer-events: none;
+}
+.poster-warp .film-name-warp {
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    z-index: 12;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    overflow: hidden;
+    width: 130px;
+    padding: 0 15px;
+    text-align: center;
+}
+.poster-warp .movieInfo p {
+    width: 130px;
+    height: 1.5rem;
+    overflow: hidden;
+    line-height: 1.5rem;
+    margin-top: .25rem;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+.poster-warp .movie-name {
+    position: relative;
+    background-color: rgba(12, 12, 13, 0.2);
+    width: 180px;
+    height: 3rem;
+    margin-top: 176px;
+    z-index: 11;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.buy-ticket{
+    display: block;
+    height: 50px;
+}
+.openTime:hover{
+    background-color: #e6e6e6;
+}
+
+/*底部*/
+#container-foot{
+    width: 100%;
+    height: 150px;
+    border-top:1px solid #333333;
+    text-align: center;
+    padding-top: 30px;
+    background-color: #333333;
+    color: #b0b0b0;
+    box-shadow: 10px 0 15px #a6a2a2;
+}
+
+.login-sel{
+    border: 0;
+    background: transparent;
+    appearance:none;
+    padding: 5px 1px;
+    font-size: 17px;
+    outline: none;
+}
+.exit{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: -50px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
