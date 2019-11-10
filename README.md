@@ -22,3 +22,11 @@ TTMS影院管理系统实现用户系统及管理系统
 - 演出计划管理（增删改查）
 
 #### 4.后台管理员系统操作排片计划，用户则可以查看到相应的影片及其计划 
+
+#### 5.部分页面展示
+![登录](https://github.com/2846256621/TTMS-project/blob/master/page_image/QQ%E5%9B%BE%E7%89%8720191110211933.png)
+![首页](https://github.com/2846256621/TTMS-project/blob/master/page_image/QQ%E5%9B%BE%E7%89%8720191110211920.png)
+![首页](https://github.com/2846256621/TTMS-project/blob/master/page_image/QQ%E5%9B%BE%E7%89%8720191110211925.png)
+![详情](https://github.com/2846256621/TTMS-project/blob/master/page_image/QQ%E5%9B%BE%E7%89%8720191110211929.png)
+![选座](https://github.com/2846256621/TTMS-project/blob/master/page_image/QQ%E5%9B%BE%E7%89%8720191110211936.png)
+![支付](https://github.com/2846256621/TTMS-project/blob/master/page_image/QQ%E5%9B%BE%E7%89%8720191110211940.png)
